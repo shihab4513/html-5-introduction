@@ -1,0 +1,29 @@
+/* nav>ul means nav er immediate ul where as nav ul mean all ul of nav */
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    background-color: lightgrey;
+}
+/* Nested menue styles */
+nav li .dropdown{
+display: none;
+    position: absolute;
+    background-color: lightyellow;
+    /* padding-left: 10px; */
+    
+}
+nav li:hover .dropdown{
+    display: block;
+}
+/* Nested menu is possible */
